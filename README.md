@@ -1,4 +1,4 @@
-# iGDP v1.1.0
+# iGDP v2.1.0
 
 ![Good](https://img.shields.io/badge/latest%20version-v1.1.0-red) ![Active](https://www.repostatus.org/badges/latest/active.svg) ![GPL](https://img.shields.io/badge/license-GPLv3.0-blue)
 
