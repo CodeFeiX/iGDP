@@ -4,7 +4,7 @@
 
 ## An integrated Genome Decontamination Pipeline (iGDP) for rumen ciliates
 
-iGDP can work as a "positive or negative filter" to obtain target rumen ciliate sequences from genomic sequencing data containing various contaminants by integrating homology search, telomere reads-assisted and clustering approaches.
+iGDP-rc can work as a "positive or negative filter" to obtain target rumen ciliate sequences from genomic sequencing data containing various contaminants by integrating homology search, telomere reads-assisted and clustering approaches.
 
 </br>
 <div align=center>
@@ -32,12 +32,12 @@ $ conda install -c bioconda samtools
 # metabat2 (>=v2.12.1)
 $ conda install -c bioconda metabat2
 ```
-* ## iGDP 
+* ## iGDP-rc 
 ```
 $ git clone https://github.com/GWang2022/iGDP.git
 # give executable permission to all scripts in iGDP scripts directory
 $ chmod a+x iGDP/scripts/*pl
-# add iGDP scripts directory to your PATH environment variable
+# add iGDP-rc scripts directory to your PATH environment variable
 $ echo 'PATH=$(pwd)/iGDP/scripts/:$PATH' >> ~/.bashrc
 $ source ~/.bashrc
 ```
@@ -54,7 +54,7 @@ $ mmseqs databases NR NRdb tmpDir
 <img src = "https://user-images.githubusercontent.com/107245708/215422762-7d1dac72-a9cc-47d9-a1df-43a38060531e.png", width = "600">
 </div> 
 
-## Run iGDP
+## Run iGDP-rc
 * ### Implement homology search program
 ```
 $ iGDP_homology_search.pl -i <input.contigs.fa> -o <output_dir> -d <mmseqs_DB> [options]
@@ -99,7 +99,7 @@ options:
 ```
 *Tip:* Running `iGDP_clustering.pl` must be after implementing `iGDP_homology_search.pl` and `iGDP_telomere_reads.pl` programs.
 
-# An example of running iGDP
+# An example of running iGDP-rc
 ## Positive filtering mode (default)
 This mode directly selects ciliate sequences as the target genome.
 
